@@ -2,24 +2,21 @@
 	import TailwindCss from './TailwindCSS.svelte'
 	import logo from './assets/svelte.png'
 	import Counter from './lib/Counter.svelte'
+	import Nav from './lib/Nav.svelte'
+	import Hero from './lib/Hero.svelte'
+	import Team from './lib/Team.svelte'
+	import Services from './lib/Services.svelte'
+	import Footer from './lib/Footer.svelte'
 </script>
-
 <TailwindCss />
-<main>
-	<img src={logo} alt="Svelte Logo" />
-	<h1>Hello Typescript!</h1>
-
-	<Counter />
-
-	<p>
-		Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-		apps.
-	</p>
-
-	<p>
-		Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-		the officially supported framework, also powered by Vite!
-	</p>
+<main class="max-w mx-auto px-4">
+<div class="pt-4 pb-12">
+  <Nav />
+  <Hero />
+  <Services />
+  <Team />
+  <Footer />
+  </div>
 </main>
 
 <style>
